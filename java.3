@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // Monthly sales of Branch A
+        int[] branchA = {12000, 15000, 13000, 16000};
+
+        // Monthly sales of Branch B
+        int[] branchB = {10000, 14000, 12000, 17000};
+
+        // Array to store total sales
+        int[] totalSales = new int[branchA.length];
+
+        // Add both data sets
+        for (int i = 0; i < branchA.length; i++) {
+            totalSales[i] = branchA[i] + branchB[i];
+        }
+
+        // Display total sales
+        for (int sale : totalSales) {
+            System.out.println(sale);
+        }
+    }
+}
